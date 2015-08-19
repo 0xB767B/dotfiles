@@ -13,6 +13,7 @@ echo $DOTFILES_DIR
 
 ln -sfv "$DOTFILES_DIR/bash/.bash_profile" ~
 ln -sfv "$DOTFILES_DIR/bash/.bash_logout" ~
+ln -sfv "$DOTFILES_DIR/bash/.bash_aliases" ~
 ln -sfv "$DOTFILES_DIR/bash/.bashrc" ~
 
 # Run tests
