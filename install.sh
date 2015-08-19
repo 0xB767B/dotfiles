@@ -15,6 +15,7 @@ ln -sfv "$DOTFILES_DIR/bash/.bash_profile" ~
 ln -sfv "$DOTFILES_DIR/bash/.bash_logout" ~
 ln -sfv "$DOTFILES_DIR/bash/.bash_aliases" ~
 ln -sfv "$DOTFILES_DIR/bash/.bashrc" ~
+ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 
 # Run tests
 
