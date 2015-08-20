@@ -9,8 +9,10 @@ echo $DOTFILES_DIR
 
 #[ -d "$DOTFILES_DIR/.git" ] && git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master
 
-# Bunch of symlinks
+# update submodules (Vundle)
+git submodule update --init
 
+# Bunch of symlinks
 ln -sfv "$DOTFILES_DIR/bash/.bash_profile" ~
 ln -sfv "$DOTFILES_DIR/bash/.bash_logout" ~
 ln -sfv "$DOTFILES_DIR/bash/.bash_aliases" ~
@@ -18,5 +20,4 @@ ln -sfv "$DOTFILES_DIR/bash/.bashrc" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 
 # Run tests
-
 #bats test/*.bats
