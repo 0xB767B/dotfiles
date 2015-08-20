@@ -18,8 +18,8 @@ ln -sfv "$DOTFILES_DIR/bash/.bash_logout" ~
 ln -sfv "$DOTFILES_DIR/bash/.bash_aliases" ~
 ln -sfv "$DOTFILES_DIR/bash/.bashrc" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
-ln -sfv "$DOTFILES_DIR/vim/vimrc" ~/.vimrc
-ln -sfv "$DOTFILES_DIR/vim/vim" ~/.vim
+ln -sfv "$DOTFILES_DIR/vimrc" ~/.vimrc
+ln -sfv "$DOTFILES_DIR/vim" ~/.vim
 
 # Run tests
 #bats test/*.bats
