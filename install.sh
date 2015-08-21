@@ -15,7 +15,7 @@ git submodule update --init
 # create of symlinks
 ln -sfv "$DOTFILES_DIR/bash_aliases" ~/.bash_aliases
 ln -sfv "$DOTFILES_DIR/bashrc" ~/.bashrc
-ln -sfv "$DOTFILES_DIR/.gitconfig" ~/.gitconfig
+ln -sfv "$DOTFILES_DIR/gitconfig" ~/.gitconfig
 ln -sfv "$DOTFILES_DIR/vimrc" ~/.vimrc
 ln -sfv "$DOTFILES_DIR/vim" ~/.vim
 ln -sfv "$DOTFILES_DIR/bin" ~/bin
