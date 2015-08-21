@@ -4,5 +4,5 @@ alias ..='cd ..'
 alias higr='history | grep -i $1'
 
 # git status must be short
-alias gist ='git status'
+alias gitst='git status'
 
