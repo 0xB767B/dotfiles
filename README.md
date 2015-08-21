@@ -9,7 +9,6 @@ My dotfiles
 $ git clone https://github.com/0xB767B/dotfiles.git
 
 # init submodules, create simlinks, install vim-plugins
-$ cd ~/dotfiles
-$ ./install.sh
+$ cd ~/dotfiles && ./install.sh
 ```
 
