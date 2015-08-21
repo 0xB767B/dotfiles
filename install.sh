@@ -20,6 +20,7 @@ ln -sfv "$DOTFILES_DIR/bash/.bashrc" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/vimrc" ~/.vimrc
 ln -sfv "$DOTFILES_DIR/vim" ~/.vim
+ln -sfv "$DOTFILES_DIR/bin" ~/bin
 
 # install vundle in vim
 vim +PluginInstall +qall
