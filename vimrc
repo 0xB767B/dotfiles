@@ -36,8 +36,11 @@ nnoremap <C-H> <C-W><C-H>
 
 " tabs, spaces, wrapping ----------------------------------------------------{{{
 set nowrap
-set textwidth=80
-set colorcolumn=+1
+" make 81st line stand out
+highlight ColorColumn ctermbg=red
+call matchadd('Colorcolumn', '\%82v', 100)
+" set textwidth=80
+" set colorcolumn=+1
 " }}}
 
 " folding -------------------------------------------------------------------{{{
@@ -54,3 +57,4 @@ nnoremap <F4> :NERDTreeToggle<CR>
 " vim-airline configuration
 set laststatus=2
 let g:airline_powerline_fonts=1
+
