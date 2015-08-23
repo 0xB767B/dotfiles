@@ -1,4 +1,4 @@
-" handle plugins ------------------------------------------------------------{{{
+"" handle plugins ------------------------------------------------------------{{{
 source ~/.vim/bundles.vim
 " }}}
 
@@ -22,6 +22,7 @@ set relativenumber
 set scrolloff=5 " show 5 lines around cursor at top/bottom
 set cursorline
 set ruler
+" }}}
 
 "" easier split-navigation --------------------------------------------------{{{
 nnoremap <C-J> <C-W><C-J>
@@ -51,11 +52,13 @@ set undodir=~/.vim/undo//
 " toggle Gundo (tree-undo)
 nnoremap <F5> :GundoToggle<CR>
 " toggle NERDTree (file-browse)
-nnoremap <F4> :NERDTreeToggle<CR>
+nnoremap <F2> :NERDTreeToggle<CR>
 
 " vim-airline configuration
 set laststatus=2
 let g:airline_powerline_fonts=1
 " }}}
 
-
+" filetype specific settings -----------------------------------------------{{{
+autocmd FileType cpp source ~/.vim/cpp.vim
+" }}}
