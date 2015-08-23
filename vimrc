@@ -1,6 +1,3 @@
-" Forget being compatible with good ol' vi"
-set nocompatible " it's 2015
-
 " handle plugins ------------------------------------------------------------{{{
 source ~/.vim/bundles.vim
 " }}}
@@ -19,6 +16,7 @@ nnoremap k gk
 " }}}
 
 " some basic options --------------------------------------------------------{{{
+set nocompatible " it's 2015... forget being compatible with good ol' vi"
 set encoding=utf-8
 set relativenumber
 set scrolloff=5 " show 5 lines around cursor at top/bottom
@@ -44,7 +42,7 @@ call matchadd('Colorcolumn', '\%82v', 100)
 set foldmethod=marker
 " }}}
 
-" undo files -------------------------------------------------------------{{{
+" undo files ----------------------------------------------------------------{{{
 set undofile "have undo files to be able to undo between sessions
 set undodir=~/.vim/undo//
 " }}}
@@ -54,9 +52,10 @@ set undodir=~/.vim/undo//
 nnoremap <F5> :GundoToggle<CR>
 " toggle NERDTree (file-browse)
 nnoremap <F4> :NERDTreeToggle<CR>
-" }}}
 
 " vim-airline configuration
 set laststatus=2
 let g:airline_powerline_fonts=1
+" }}}
+
 
