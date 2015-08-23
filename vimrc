@@ -44,8 +44,7 @@ call matchadd('Colorcolumn', '\%82v', 100)
 set foldmethod=marker
 " }}}
 
-" undo files -------------------------------------------------------------
-" ---------- {{{
+" undo files -------------------------------------------------------------{{{
 set undofile "have undo files to be able to undo between sessions
 set undodir=~/.vim/undo//
 " }}}
