@@ -16,6 +16,12 @@ Plugin 'scrooloose/nerdtree'
 " Gundo
 Plugin 'sjl/gundo.vim'
 
+" Vim colorschemes
+Plugin 'flazz/vim-colorschemes'
+
+" CycleColor
+Plugin 'vim-scripts/CycleColor'
+
 " All plugins must be added brefore the following line
 call vundle#end()         " required
 filetype plugin indent on " required
