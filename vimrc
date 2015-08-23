@@ -24,8 +24,6 @@ set relativenumber
 set scrolloff=5 " show 5 lines around cursor at top/bottom
 set cursorline
 set ruler
-set undofile " have undo for files between vim-sessions
-" }}}
 
 "" easier split-navigation --------------------------------------------------{{{
 nnoremap <C-J> <C-W><C-J>
@@ -35,16 +33,21 @@ nnoremap <C-H> <C-W><C-H>
 " }}}
 
 " tabs, spaces, wrapping ----------------------------------------------------{{{
-set nowrap
+set nowrap       " no virtual wrap
+set textwidth=0 wrapmargin=0 " do not insert newlines
 " make 81st line stand out
 highlight ColorColumn ctermbg=red
 call matchadd('Colorcolumn', '\%82v', 100)
-" set textwidth=80
-" set colorcolumn=+1
 " }}}
 
 " folding -------------------------------------------------------------------{{{
 set foldmethod=marker
+" }}}
+
+" undo files -------------------------------------------------------------
+" ---------- {{{
+set undofile "have undo files to be able to undo between sessions
+set undodir=~/.vim/undo//
 " }}}
 
 " plugin configuration ------------------------------------------------------{{{
