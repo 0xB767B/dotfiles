@@ -32,15 +32,11 @@ nnoremap <C-H> <C-W><C-H>
 " }}}
 
 " tabs, spaces, wrapping ----------------------------------------------------{{{
-"set nowrap       " no virtual wrap
-"set textwidth=0 wrapmargin=0 " do not insert newlines
-"execute "set colorcolumn=" .join(range(81, 335), ',')
-"hi ColorColumn guibg=#000000 ctermbg=0
-" make 81st line stand out
-"highlight ColorColumn ctermbg=red
-"call matchadd('Colorcolumn', '\%81v', 100)
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+set nowrap       " no virtual wrap
+set textwidth=80 wrapmargin=0 " do not insert newlines
+" make characters beyond 81st line stand out
+highlight OverLength ctermbg=grey ctermfg=white guibg=#592929
+match OverLength /\%82v\+/
 " }}}
 
 " folding -------------------------------------------------------------------{{{
@@ -63,7 +59,6 @@ set laststatus=2
 let g:airline_powerline_fonts=1
 " }}}
 
-" filetype specific settings -----------------------------------------------{{{
+" filetype specific settings ------------------------------------------------{{{
 autocmd FileType cpp source ~/.vim/cpp.vim
 " }}}
-
