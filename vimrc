@@ -1,4 +1,4 @@
-"" handle plugins ------------------------------------------------------------{{{
+"" handle plugins -----------------------------------------------------------{{{
 source ~/.vim/bundles.vim
 " }}}
 
@@ -32,11 +32,15 @@ nnoremap <C-H> <C-W><C-H>
 " }}}
 
 " tabs, spaces, wrapping ----------------------------------------------------{{{
-set nowrap       " no virtual wrap
-set textwidth=0 wrapmargin=0 " do not insert newlines
+"set nowrap       " no virtual wrap
+"set textwidth=0 wrapmargin=0 " do not insert newlines
+"execute "set colorcolumn=" .join(range(81, 335), ',')
+"hi ColorColumn guibg=#000000 ctermbg=0
 " make 81st line stand out
-highlight ColorColumn ctermbg=red
-call matchadd('Colorcolumn', '\%82v', 100)
+"highlight ColorColumn ctermbg=red
+"call matchadd('Colorcolumn', '\%81v', 100)
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
 " }}}
 
 " folding -------------------------------------------------------------------{{{
@@ -62,3 +66,4 @@ let g:airline_powerline_fonts=1
 " filetype specific settings -----------------------------------------------{{{
 autocmd FileType cpp source ~/.vim/cpp.vim
 " }}}
+
