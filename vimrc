@@ -37,6 +37,10 @@ set textwidth=80 wrapmargin=0 " do not insert newlines
 " }}}
 
 " themes, colors ------------------------------------------------------------{{{
+"
+" for a list of available colors, check:
+" https://upload.wikimedia.org/wikipedia/en/1/15/Xterm_256color_chart.svg
+
 " make characters beyond 81st line stand out
 "highlight OverLength ctermbg=grey ctermfg=white guibg=#592929
 "match OverLength /\%82v\+/
