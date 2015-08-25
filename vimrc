@@ -44,8 +44,12 @@ set textwidth=80 wrapmargin=0 " do not insert newlines
 " make characters beyond 81st line stand out
 "highlight OverLength ctermbg=grey ctermfg=white guibg=#592929
 "match OverLength /\%82v\+/
-set t_Co=256
-colorscheme 0x7A69_dark
+" set t_Co=256
+" colorscheme 0x7A69_dark
+syntax enable
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
 " the following trick to have different background beyond column 81 is from
 " http://blog.hanschen.org/2012/10/24/different-background-color-in-vim-past-80-columns/
 execute "set colorcolumn=" . join(range(81,335), ',')
