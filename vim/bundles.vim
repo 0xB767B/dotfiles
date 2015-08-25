@@ -19,6 +19,9 @@ Plugin 'sjl/gundo.vim'
 " vim-fugitive for git
 Plugin 'tpope/vim-fugitive'
 
+" syntax highlighting
+Plugin 'scrooloose/syntastic'
+
 " Vim colorschemes
 Plugin 'flazz/vim-colorschemes'
 
