@@ -32,7 +32,7 @@ nnoremap <C-H> <C-W><C-H>
 " }}}
 
 " tabs, spaces, wrapping ----------------------------------------------------{{{
-set nowrap       " no virtual wrap
+set nowrap                    " no virtual wrap
 set textwidth=80 wrapmargin=0 " do not insert newlines
 " }}}
 
@@ -40,6 +40,7 @@ set textwidth=80 wrapmargin=0 " do not insert newlines
 " make characters beyond 81st line stand out
 "highlight OverLength ctermbg=grey ctermfg=white guibg=#592929
 "match OverLength /\%82v\+/
+set t_Co=256
 colorscheme 0x7A69_dark
 " the following trick to have different background beyond column 81 is from
 " http://blog.hanschen.org/2012/10/24/different-background-color-in-vim-past-80-columns/
