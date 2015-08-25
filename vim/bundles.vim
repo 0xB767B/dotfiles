@@ -16,6 +16,9 @@ Plugin 'scrooloose/nerdtree'
 " Gundo
 Plugin 'sjl/gundo.vim'
 
+" vim-fugitive for git
+Plugin 'tpope/vim-fugitive'
+
 " Vim colorschemes
 Plugin 'flazz/vim-colorschemes'
 
