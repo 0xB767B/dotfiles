@@ -20,7 +20,10 @@ Plugin 'sjl/gundo.vim'
 Plugin 'tpope/vim-fugitive'
 
 " syntax highlighting
-Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/syntastic'
+
+" YouCompleteMe
+Plugin 'Valloric/YouCompleteMe'
 
 " Vim colorschemes
 Plugin 'flazz/vim-colorschemes'
