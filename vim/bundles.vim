@@ -10,25 +10,13 @@ call vundle#begin()
 filetype plugin indent on
 Plugin 'gmarik/Vundle.vim'
 
-" NerdTree
 Plugin 'scrooloose/nerdtree'
-
-" Gundo
 Plugin 'sjl/gundo.vim'
-
-" vim-fugitive for git
+Plugin 'bling/airline'
 Plugin 'tpope/vim-fugitive'
-
-" syntax highlighting
-" Plugin 'scrooloose/syntastic'
-
-" YouCompleteMe
+"Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
-
-" Vim colorschemes
 Plugin 'flazz/vim-colorschemes'
-
-" CycleColor
 Plugin 'vim-scripts/CycleColor'
 
 " All plugins must be added brefore the following line
