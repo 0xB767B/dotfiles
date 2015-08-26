@@ -12,8 +12,8 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
-nnoremap j gj " move down one displayed line (softwrap)
-nnoremap k gk " move down one displayed line (softwrap)
+nnoremap j gj 
+nnoremap k gk
 
 " easier split-navigation
 nnoremap <C-J> <C-W><C-J>
