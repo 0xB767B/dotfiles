@@ -12,7 +12,7 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'sjl/gundo.vim'
-Plugin 'bling/airline'
+Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 "Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
