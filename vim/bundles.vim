@@ -10,7 +10,9 @@ call vundle#begin()
 filetype plugin indent on
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'scrooloose/nerdtree'
+"Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-vinegar'
 Plugin 'sjl/gundo.vim'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'

@@ -20,6 +20,9 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" insert a matching curly brace the programmers-way
+inoremap { {<CR><BS>}<Esc>ko
 " }}}
 
 " basic options -------------------------------------------------------------{{{
@@ -65,11 +68,11 @@ set undodir=~/.vim/undo// " don't put them in directory of file (distracting)
 
 " plugin configuration ------------------------------------------------------{{{
 nnoremap <F5> :GundoToggle<CR>    " toggle Gundo (tree-undo)
-nnoremap <F2> :NERDTreeToggle<CR> " toggle NERDTree (file-browse)
+"nnoremap <F2> :NERDTreeToggle<CR> " toggle NERDTree (file-browse)
 
 " vim-airline configuration
 set laststatus=2                " always show status line
-"let g:airline_powerline_fonts=1 " populate airline_symbols with powerline syms
+let g:airline_powerline_fonts=1 " populate airline_symbols with powerline syms
 " }}}
 
 " filetype specific settings ------------------------------------------------{{{
