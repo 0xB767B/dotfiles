@@ -64,6 +64,7 @@ highlight ColorColumn ctermbg=236
 " undo files ----------------------------------------------------------------{{{
 set undofile              " have undo files to be able to undo between sessions
 set undodir=~/.vim/undo// " don't put them in directory of file (distracting)
+set nobackup
 " }}}
 
 " plugin configuration ------------------------------------------------------{{{
