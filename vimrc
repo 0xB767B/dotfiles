@@ -22,7 +22,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 " insert a matching curly brace the programmers-way
-inoremap { {<CR><BS>}<Esc>ko
+"inoremap { {<CR><BS>}<Esc>ko
 " }}}
 
 " basic options -------------------------------------------------------------{{{
@@ -67,7 +67,7 @@ set undodir=~/.vim/undo// " don't put them in directory of file (distracting)
 " }}}
 
 " plugin configuration ------------------------------------------------------{{{
-nnoremap <F5> :GundoToggle<CR>    " toggle Gundo (tree-undo)
+nnoremap <F2> :GundoToggle<CR>    " toggle Gundo (tree-undo)
 "nnoremap <F2> :NERDTreeToggle<CR> " toggle NERDTree (file-browse)
 
 " vim-airline configuration
