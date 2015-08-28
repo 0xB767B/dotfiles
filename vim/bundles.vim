@@ -21,6 +21,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-scripts/CycleColor'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'SirVer/ultisnips'
 
 " All plugins must be added brefore the following line
 call vundle#end()         " required
