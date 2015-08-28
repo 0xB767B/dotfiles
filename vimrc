@@ -1,4 +1,4 @@
-"" handle plugins -----------------------------------------------------------{{{
+" handle plugins ------------------------------------------------------------{{{
 source ~/.vim/bundles.vim
 " }}}
 
@@ -33,6 +33,7 @@ set scrolloff=5       " show 5 lines around cursor at top/bottom
 set cursorline        " spot the cursor easyly
 set ruler             " show me where I am
 set foldmethod=marker " use marker for folding
+set splitbelow splitright " open new split to right and bottom
 " }}}
 
 " tabs, spaces, wrapping ----------------------------------------------------{{{
