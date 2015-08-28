@@ -10,7 +10,7 @@ call vundle#begin()
 filetype plugin indent on
 Plugin 'gmarik/Vundle.vim'
 
-"Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-vinegar'
 Plugin 'sjl/gundo.vim'
@@ -20,6 +20,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-scripts/CycleColor'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " All plugins must be added brefore the following line
 call vundle#end()         " required
