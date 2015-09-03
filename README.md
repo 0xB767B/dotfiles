@@ -2,6 +2,10 @@
 
 My dotfiles
 
+## Requirements
+
+If vim should save files on focus-lost, tmux version 2.0 is required.
+
 ## Installation
 
 ``` bash
