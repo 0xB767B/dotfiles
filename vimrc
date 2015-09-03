@@ -35,6 +35,10 @@ set cursorline        " spot the cursor easyly
 set ruler             " show me where I am
 set foldmethod=marker " use marker for folding
 set splitbelow splitright " open new split to right and bottom
+" Automatically safe files when switchin between them / leaving vim
+set autowriteall
+autocmd FocusLost * silent! :wa
+autocmd TabLeave * silent! :wa
 " }}}
 
 " tabs, spaces, wrapping ----------------------------------------------------{{{

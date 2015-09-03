@@ -10,6 +10,7 @@ call vundle#begin()
 filetype plugin indent on
 Plugin 'gmarik/Vundle.vim'
 
+ Plugin 'tmux-plugins/vim-tmux-focus-events'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-vinegar'
