@@ -30,6 +30,7 @@ set nocompatible      " it's 2015... forget being compatible with good ol' vi"
 set encoding=utf-8
 set mouse=a           " resize splits is easier by mouse
 set relativenumber    " easier for navigating/jumping lines
+set number            " show line number in relative number mode instead of 0
 set scrolloff=5       " show 5 lines around cursor at top/bottom
 set cursorline        " spot the cursor easyly
 set ruler             " show me where I am
