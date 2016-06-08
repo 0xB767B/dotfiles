@@ -85,6 +85,7 @@ let g:airline_powerline_fonts=1 " populate airline_symbols with powerline syms
 
 " filetype specific settings ------------------------------------------------{{{
 filetype on " enable filetype detection
+autocmd FileType c nnoremap <buffer> <silent> <C-]> :YcmCompleter GoTo<cr>
 autocmd FileType cpp source ~/.vim/cpp.vim
 autocmd FileType ruby source ~/.vim/ruby.vim
 " }}}
