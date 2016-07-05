@@ -7,7 +7,7 @@ filetype off
 " let Vundle manage Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-filetype plugin indent on
+" filetype plugin indent on
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'tmux-plugins/vim-tmux-focus-events'
@@ -25,6 +25,8 @@ Plugin 'vim-scripts/CycleColor'
 Plugin 'christoomey/vim-tmux-navigator'
 "Plugin 'SirVer/ultisnips'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'vim-scripts/Conque-GDB'
+Plugin 'rust-lang/rust.vim'
 
 " All plugins must be added brefore the following line
 call vundle#end()         " required
