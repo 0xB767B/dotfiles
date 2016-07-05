@@ -88,4 +88,8 @@ filetype on " enable filetype detection
 autocmd FileType c nnoremap <buffer> <silent> <C-]> :YcmCompleter GoTo<cr>
 autocmd FileType cpp source ~/.vim/cpp.vim
 autocmd FileType ruby source ~/.vim/ruby.vim
+
+let g:ycm_global_ycm_extra_conf = ".vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
+
+
 " }}}
