@@ -1,0 +1,5 @@
+echom ">^.^<"
+
+set number "show line numbers
+set relativenumber "show relative line numbers for easier jumping
+set showmatch "show matching braces
