@@ -19,6 +19,7 @@ ln -sfv "$DOTFILES_DIR/profile" ~/.profile
 ln -sfv "$DOTFILES_DIR/bash_logout" ~/.bash_logout
 ln -sfv "$DOTFILES_DIR/gitconfig" ~/.gitconfig
 ln -sfv "$DOTFILES_DIR/vimrc" ~/.vimrc
+ln -sfv "$DOTFILES_DIR/gvimrc" ~/.gvimrc
 ln -sfv "$DOTFILES_DIR/vim" ~/.vim
 ln -sfv "$DOTFILES_DIR/tmux.conf" ~/.tmux.conf
 ln -sfv "$DOTFILES_DIR/bin" ~/bin
