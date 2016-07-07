@@ -21,6 +21,10 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+let mapleader='ö'
+
+map <Leader>m :make run<CR>
+
 " insert a matching curly brace the programmers-way
 "inoremap { {<CR><BS>}<Esc>ko
 " }}}
@@ -83,11 +87,16 @@ set laststatus=2                " always show status line
 let g:airline_powerline_fonts=1 " populate airline_symbols with powerline syms
 " }}}
 
+" you complete me configuration ---------------------------------------------{{{
+let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_rust_src_path ='/home/sul/dev/rust/rust-lang.org/rust/src'
+" }}}
 " filetype specific settings ------------------------------------------------{{{
 filetype on " enable filetype detection
 autocmd FileType c nnoremap <buffer> <silent> <C-]> :YcmCompleter GoTo<cr>
 autocmd FileType cpp source ~/.vim/cpp.vim
 autocmd FileType ruby source ~/.vim/ruby.vim
+autocmd BufRead,BufNewFile Cargo.toml,Cargo.lock,*.rs compiler cargo
 
 let g:ycm_global_ycm_extra_conf = ".vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
 
