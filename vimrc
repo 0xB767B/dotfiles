@@ -26,7 +26,7 @@ let mapleader='ö'
 map <Leader>m :make run<CR>
 
 " insert a matching curly brace the programmers-way
-"inoremap { {<CR><BS>}<Esc>ko
+inoremap { {<CR>}<Esc>ko
 " }}}
 
 " basic options -------------------------------------------------------------{{{
