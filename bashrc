@@ -126,3 +126,8 @@ fi
 if [ -n "$DISPLAY" -a "$TERM" == "xterm" ]; then
 	    export TERM=xterm-256color
 fi
+
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+	export WORKON_HOME=$HOME/.virtualenvs
+	source /usr/local/bin/virtualenvwrapper.sh
+fi
