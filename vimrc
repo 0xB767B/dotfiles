@@ -26,7 +26,7 @@ let mapleader='ö'
 map <Leader>m :make run<CR>
 
 " insert a matching curly brace the programmers-way
-inoremap { {<CR>}<Esc>ko
+" inoremap { {<CR>}<Esc>ko
 " }}}
 
 " basic options -------------------------------------------------------------{{{
@@ -79,8 +79,11 @@ set nobackup
 " }}}
 
 " plugin configuration ------------------------------------------------------{{{
-nnoremap <F2> :GundoToggle<CR>    " toggle Gundo (tree-undo)
-"nnoremap <F2> :NERDTreeToggle<CR> " toggle NERDTree (file-browse)
+" nnoremap <F2> :GundoToggle<CR>    " toggle Gundo (tree-undo)
+nnoremap <F2> :NERDTreeToggle<CR> " toggle NERDTree (file-browse)
+
+" key mappings for you complete me
+nnoremap <F12> :YcmCompleter GoTo<CR>
 
 " vim-airline configuration
 set laststatus=2                " always show status line
@@ -98,7 +101,17 @@ autocmd FileType cpp source ~/.vim/cpp.vim
 autocmd FileType ruby source ~/.vim/ruby.vim
 autocmd BufRead,BufNewFile Cargo.toml,Cargo.lock,*.rs compiler cargo
 
+" in case no .ycm_extra_conf.py is found in the project directory, use default
+" from ycm distribution
 let g:ycm_global_ycm_extra_conf = ".vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
+
+" add sematic triggers for c/c++ for identifiers
+" normally, ycm would only bring up identifier based auto completion
+let g:ycm_semantic_triggers =  {
+  \   'c' : ['re![a-zA-Z_][a-zA-Z0-9_]*', '->', '.'],
+  \   'cpp' : ['re![a-zA-Z_][a-zA-Z0-9_]*', ' ->', '.', '::'],
+  \ }
 
 
 " }}}
+
