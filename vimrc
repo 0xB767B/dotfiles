@@ -79,11 +79,14 @@ set nobackup
 " }}}
 
 " plugin configuration ------------------------------------------------------{{{
-" nnoremap <F2> :GundoToggle<CR>    " toggle Gundo (tree-undo)
-nnoremap <F2> :NERDTreeToggle<CR> " toggle NERDTree (file-browse)
 
-" key mappings for you complete me
+nnoremap <F2> : TlistToggle<CR>
+nnoremap <F3> :NERDTreeToggle<CR>
+" nnoremap <F4> :GundoToggle<CR>
 nnoremap <F12> :YcmCompleter GoTo<CR>
+
+let g:NERDTreeWinSize=50
+let g:Tlist_WinWidth=50
 
 " vim-airline configuration
 set laststatus=2                " always show status line
@@ -96,7 +99,8 @@ let g:ycm_rust_src_path ='/home/sul/dev/rust/rust-lang.org/rust/src'
 " }}}
 " filetype specific settings ------------------------------------------------{{{
 filetype on " enable filetype detection
-autocmd FileType c nnoremap <buffer> <silent> <C-]> :YcmCompleter GoTo<cr>
+" autocmd FileType c nnoremap <buffer> <silent> <C-]> :YcmCompleter GoTo<cr>
+autocmd FileType c source ~/.vim/cpp.vim
 autocmd FileType cpp source ~/.vim/cpp.vim
 autocmd FileType ruby source ~/.vim/ruby.vim
 autocmd BufRead,BufNewFile Cargo.toml,Cargo.lock,*.rs compiler cargo
