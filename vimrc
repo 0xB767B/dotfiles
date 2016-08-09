@@ -116,6 +116,10 @@ let g:ycm_semantic_triggers =  {
   \   'cpp' : ['re![a-zA-Z_][a-zA-Z0-9_]*', ' ->', '.', '::'],
   \ }
 
+" configuration for clang-format plugin
+let g:clang_format#detect_style_file = 1 " use style file if present
+nnoremap <C-Y> :ClangFormat<CR>
+vnoremap <C-Y> :ClangFormat<CR>
 
 " }}}
 
