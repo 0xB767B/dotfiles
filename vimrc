@@ -12,8 +12,8 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
-nnoremap j gj 
-nnoremap k gk
+" nnoremap j gj 
+" nnoremap k gk
 
 " easier split-navigation
 nnoremap <C-J> <C-W><C-J>
@@ -117,7 +117,7 @@ let g:ycm_semantic_triggers =  {
   \ }
 
 " configuration for clang-format plugin
-let g:clang_format#detect_style_file = 1 " use style file if present
+let g:clang_format#detect_style_file = 1
 nnoremap <C-Y> :ClangFormat<CR>
 vnoremap <C-Y> :ClangFormat<CR>
 
