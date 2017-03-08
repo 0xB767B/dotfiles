@@ -647,3 +647,8 @@ _isroot=false
     fi
   #}}}
 #}}}
+
+export WORKON_HOME=~/.virtualenv
+source /usr/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+
