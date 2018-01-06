@@ -62,7 +62,6 @@ set textwidth=80 wrapmargin=0 " do not insert newlines
 " set t_Co=256
 " colorscheme 0x7A69_dark
 syntax enable
-let g:solarized_termcolors=256 " this seems to work best in ubuntu-console
 set background=dark            " solarized manual suggests this
 colorscheme solarized
 
